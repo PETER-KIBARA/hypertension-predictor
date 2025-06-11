@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyper Tension Prediction</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Hyper Tension Prediction Using Machine Learning (KNN Algorithm)</h1>
+
+    <main>
+        <form action="/predict" method="post">
+            <fieldset>
+                <legend>Basic Information</legend>
+                <label>Enter Age:<br><input type="text" name="age" required></label><br>
+                <label>Sex (0 = Female, 1 = Male):<br><input type="text" name="sex" required></label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Health & Lifestyle</legend>
+                <label>High Cholesterol (0 = No, 1 = Yes):<br><input type="text" name="high_chol" required></label><br>
+                <label>Cholesterol Checked (0 = No, 1 = Yes):<br><input type="text" name="chol_check" required></label><br>
+                <label>BMI:<br><input type="text" name="bmi" required></label><br>
+                <label>Smoker (0 = No, 1 = Yes):<br><input type="text" name="smoker" required></label><br>
+                <label>Heavy Alcohol Use (0 = No, 1 = Yes):<br><input type="text" name="heavy_alcohol" required></label><br>
+                <label>Physical Activity (0 = Low, 1 = High):<br><input type="text" name="phys_activity" required></label><br>
+                <label>Fruits Consumption (0 = Low, 1 = High):<br><input type="text" name="fruits" required></label><br>
+                <label>Vegetables Consumption (0 = Low, 1 = High):<br><input type="text" name="veggies" required></label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Medical History</legend>
+                <label>Heart Disease or Attack (0 = No, 1 = Yes):<br><input type="text" name="heart_disease" required></label><br>
+                <label>Stroke (0 = No, 1 = Yes):<br><input type="text" name="stroke" required></label><br>
+                <label>Diabetes (0 = No, 1 = Yes):<br><input type="text" name="diabetes" required></label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>General Health</legend>
+                <label>General Health (1 to 5):<br><input type="text" name="gen_health" required></label><br>
+                <label>Mental Health (0 to 15 days):<br><input type="text" name="ment_health" required></label><br>
+                <label>Physical Health (0 to 30 days):<br><input type="text" name="phys_health" required></label><br>
+                <label>Difficulty Walking (0 = No, 1 = Yes):<br><input type="text" name="diff_walk" required></label><br>
+            </fieldset>
+
+            <br>
+            <input type="submit" value="Predict">
+        </form>
+    </main>
+</body>
+</html>
