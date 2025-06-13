@@ -10,7 +10,6 @@ import numpy as np
 
 app = Flask(__name__)
 
-# Load dataset
 df = pd.read_csv("diabetes_data.csv")
 df.fillna(df.mean(numeric_only=True), inplace=True)
 
